@@ -42,10 +42,6 @@ public class 括号匹配 {
                 }
             }
         }
-        if(stack.isEmpty()){
-            return true;
-        }else {
-            return false;
-        }
+        return stack.isEmpty();
     }
 }
