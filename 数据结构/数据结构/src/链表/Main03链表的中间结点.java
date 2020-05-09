@@ -32,4 +32,19 @@ public class Main03链表的中间结点{
         }
         return head;
     }
+
+    public ListNode middleNode2(ListNode head) {
+        if(head==null){
+            return null;
+        }
+        ListNode low=head;
+        ListNode fast=head;
+        while (fast.next!=null){
+            fast=fast.next.next;
+            if(fast!=null){
+                low=low.next;
+            }
+        }
+        return low;
+    }
 }
